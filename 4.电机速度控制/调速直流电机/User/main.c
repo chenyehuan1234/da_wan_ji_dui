@@ -29,7 +29,7 @@ int main(void)
 		}
 		if (ans==0){
 			Speed -= 2;
-			if (Speed < 0)				//速度变量低于0后
+			if (Speed < -100)				//速度变量低于-100后
 			{
 				ans=1;				//改为加速模式			
 			}

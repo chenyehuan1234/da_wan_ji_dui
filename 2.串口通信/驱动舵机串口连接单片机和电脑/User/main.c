@@ -26,11 +26,11 @@ int main(void)
 		if(Serial_RxFlag==1)
 		{
 	  Serial_RxFlag=0;
-		uint16_t RxData = Serial_GetRxData();	
-		uint16_t angle=RxData;
-		uint16_t i=angle*100/9+500;
-		PWM_SetCompare2(i);
-	  printf("finished");
+		uint16_t RxData = Serial_GetRxData();	//接受数据
+		uint16_t angle=RxData;       
+		uint16_t i=angle*100/9+500;    //占空比对应
+		PWM_SetCompare2(i);    //设置舵机角度
+	  printf("finished");    //结束反馈
 
 		}
 	}									

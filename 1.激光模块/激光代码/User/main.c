@@ -22,8 +22,8 @@ int main(void)
 	while (1)
 	{
 		GPIO_ResetBits(GPIOB, GPIO_Pin_12);		//将PB12引脚设置为低电平，闭灯
-		Delay_ms(100);							//延时100ms
+		Delay_ms(500);							//延时500ms
 		GPIO_SetBits(GPIOB, GPIO_Pin_12);		//将PB12引脚设置为高电平，高电平触发亮灯
-		Delay_ms(100);							//延时100ms
+		Delay_ms(500);							//延时500ms
 	}
 }
